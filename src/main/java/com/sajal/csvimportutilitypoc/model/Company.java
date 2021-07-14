@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-import static javax.persistence.GenerationType.IDENTITY;
+import static javax.persistence.GenerationType.SEQUENCE;
 import static org.springframework.beans.BeanUtils.copyProperties;
 
 @Entity
@@ -19,7 +19,7 @@ import static org.springframework.beans.BeanUtils.copyProperties;
 public class Company {
 
     @Id
-    @GeneratedValue(strategy = IDENTITY)
+    @GeneratedValue(strategy = SEQUENCE)
     @Getter @Setter private int id;
 
     @Column(unique = true, nullable = false)

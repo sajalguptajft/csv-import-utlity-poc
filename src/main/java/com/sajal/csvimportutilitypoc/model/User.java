@@ -9,7 +9,7 @@ import javax.persistence.*;
 
 import java.util.Objects;
 
-import static javax.persistence.GenerationType.IDENTITY;
+import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
 @Accessors(chain = true)
@@ -17,7 +17,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = IDENTITY)
+    @GeneratedValue(strategy = SEQUENCE)
     @Getter @Setter private int id;
 
     @Column(unique = true, nullable = false)

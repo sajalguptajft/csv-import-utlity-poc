@@ -6,8 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CsvImportUtilityPocApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(CsvImportUtilityPocApplication.class, args);
-    }
+    public static void main(String[] args) { SpringApplication.run(CsvImportUtilityPocApplication.class, args); }
 
 }
